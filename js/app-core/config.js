@@ -1,23 +1,36 @@
 let config = function($stateProvider, $urlRouterProvider) {
+  
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('root',{
-      url         :'/',
       abstract    :true,
       templateUrl :'templates/layout.tpl.html'
     })
 
-    .state('root.home',{
-      url         :'/home',
-      controller  :'HomeController as vm',
-      templateUrl :'templates/home.tpl.html'
+    .state('root.about',{
+      url         :'/',
+      controller  :'AboutController as vm',
+      templateUrl :'templates/about.tpl.html'
     })
 
-    .state('root.about',{
-      url         :'/about',
-      controller  :'AboutController as vm',
-      templateUrl : 'templates/about.tpl.html'
+    .state('root.hobbies',{
+      url         :'/hobbies',
+      controller  :'HobbiesController as vm',
+      templateUrl :'templates/hobbies.tpl.html' 
+
+    })
+
+    .state('root.single',{
+      url : 'single/:id',
+      controller :'SingleController',
+      templateUrl : 'templates/single.tpl.html'
+    })
+
+    .state('root.mywork',{
+      url         :'/work',
+      controller  :'MyWorkController as vm',
+      templateUrl : 'templates/mywork.tpl.html'
     })
     .state('root.contact',{
       url         :'/contact',

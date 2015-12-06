@@ -5,6 +5,6 @@ let ContactController = function() {
 
 };
 
-ContactController.$inject = [''];
+ContactController.$inject = [];
 
 export default ContactController;

@@ -4,6 +4,6 @@ let AboutController = function() {
 
 };
 
-AboutController.$inject = [''];
+AboutController.$inject = [];
 
 export default AboutController;

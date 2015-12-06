@@ -1,7 +1,73 @@
 // Put any @imports here
 // See Readme for a list of supported ones
 @import 'foundation';
+@import "font-awesome";
+
+//HEADER
+
+.name h1 a{
+  color :#C7C1A7 !important;
+}
+
+h4{
+  text-align : center;
+  color :grey;
+  font-size :5em;
+  font-family: 'Lora', serif;
+}
+
+  
 
 body {
-  background: #e2ebf3;
+  //background: #e2ebf3;
+  background : #FBF7E3;
+  font-family: 'Old Standard TT', serif;
+}
+
+
+
+
+
+
+
+//FOOTER 
+footer{
+  //margin: -19px 0 0 0;
+  background:#768A85;
+  font-family: 'Lora', serif;;
+}
+p{
+  height : 20px;
+}
+
+.footer-list{
+  list-style:none;
+ 
+}
+.footer-list li{
+  margin : 10px 20px;
+  color :#C7C1A7;
+}
+
+.footer-list a{
+  margin-left : 20px;
+  //font-size : 15px;
+  color :#C7C1A7;
+  font-family: 'Lora', serif;
+
+}
+
+.footer-text{
+  text-decoration :none;
+  //color :#FBF7E3;
+}
+
+.footer-list a:hover{
+  color:#FBF7E3;
+}
+.foo-heading{
+  text-align : center;
+  color :#FBF7E3;
+  font-size :5em;
+  font-family: 'Lora', serif;
 }

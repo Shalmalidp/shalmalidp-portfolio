@@ -5,20 +5,29 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 var config = function config($stateProvider, $urlRouterProvider) {
+
   $urlRouterProvider.otherwise('/');
 
   $stateProvider.state('root', {
-    url: '/',
     abstract: true,
     templateUrl: 'templates/layout.tpl.html'
-  }).state('root.home', {
-    url: '/home',
-    controller: 'HomeController as vm',
-    templateUrl: 'templates/home.tpl.html'
   }).state('root.about', {
-    url: '/about',
+    url: '/',
     controller: 'AboutController as vm',
     templateUrl: 'templates/about.tpl.html'
+  }).state('root.hobbies', {
+    url: '/hobbies',
+    controller: 'HobbiesController as vm',
+    templateUrl: 'templates/hobbies.tpl.html'
+
+  }).state('root.single', {
+    url: 'single/:id',
+    controller: 'SingleController',
+    templateUrl: 'templates/single.tpl.html'
+  }).state('root.mywork', {
+    url: '/work',
+    controller: 'MyWorkController as vm',
+    templateUrl: 'templates/mywork.tpl.html'
   }).state('root.contact', {
     url: '/contact',
     controller: 'ContactController as vm',
@@ -48,10 +57,10 @@ var _config2 = _interopRequireDefault(_config);
 
 _angular2['default'].module('app.core', ['ui.router']).config(_config2['default']);
 
-},{"./config":1,"angular":11,"angular-ui-router":9}],3:[function(require,module,exports){
-'use strict';
+},{"./config":1,"angular":13,"angular-ui-router":11}],3:[function(require,module,exports){
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var AboutController = function AboutController() {
@@ -59,15 +68,15 @@ var AboutController = function AboutController() {
   var vm = this;
 };
 
-AboutController.$inject = [''];
+AboutController.$inject = [];
 
-exports['default'] = AboutController;
-module.exports = exports['default'];
+exports["default"] = AboutController;
+module.exports = exports["default"];
 
 },{}],4:[function(require,module,exports){
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var ContactController = function ContactController() {
@@ -75,28 +84,54 @@ var ContactController = function ContactController() {
   var vm = this;
 };
 
-ContactController.$inject = [''];
+ContactController.$inject = [];
 
-exports['default'] = ContactController;
-module.exports = exports['default'];
+exports["default"] = ContactController;
+module.exports = exports["default"];
 
 },{}],5:[function(require,module,exports){
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var HomeController = function HomeController() {
+var HobbiesController = function HobbiesController() {};
+
+HobbiesController.$inject = [];
+
+exports["default"] = HobbiesController;
+module.exports = exports["default"];
+
+},{}],6:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var MyWorkController = function MyWorkController() {
 
   var vm = this;
 };
 
-HomeController.$inject = [''];
+MyWorkController.$inject = [];
 
-exports['default'] = HomeController;
-module.exports = exports['default'];
+exports["default"] = MyWorkController;
+module.exports = exports["default"];
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var SingleController = function SingleController() {};
+
+SingleController.$inject = [];
+
+exports["default"] = SingleController;
+module.exports = exports["default"];
+
+},{}],8:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -107,9 +142,9 @@ var _angular2 = _interopRequireDefault(_angular);
 
 //Controllers
 
-var _controllersHomeController = require('./controllers/home.controller');
+var _controllersMyworkController = require('./controllers/mywork.controller');
 
-var _controllersHomeController2 = _interopRequireDefault(_controllersHomeController);
+var _controllersMyworkController2 = _interopRequireDefault(_controllersMyworkController);
 
 var _controllersContactController = require('./controllers/contact.controller');
 
@@ -119,15 +154,23 @@ var _controllersAboutController = require('./controllers/about.controller');
 
 var _controllersAboutController2 = _interopRequireDefault(_controllersAboutController);
 
+var _controllersHobbiesController = require('./controllers/hobbies.controller');
+
+var _controllersHobbiesController2 = _interopRequireDefault(_controllersHobbiesController);
+
+var _controllersSingleController = require('./controllers/single.controller');
+
+var _controllersSingleController2 = _interopRequireDefault(_controllersSingleController);
+
 //services
 
 var _servicesPortfolioService = require('./services/portfolio.service');
 
 var _servicesPortfolioService2 = _interopRequireDefault(_servicesPortfolioService);
 
-_angular2['default'].module('app.layout', ['app.core']).controller('HomeController', _controllersHomeController2['default']).controller('AboutController', _controllersAboutController2['default']).controller('ContactController', _controllersContactController2['default']).service('PortfolioService, PortfolioService');
+_angular2['default'].module('app.layout', ['app.core']).controller('MyWorkController', _controllersMyworkController2['default']).controller('AboutController', _controllersAboutController2['default']).controller('ContactController', _controllersContactController2['default']).controller('HobbiesController', _controllersHobbiesController2['default']).controller('SingleController', _controllersSingleController2['default']).service('PortfolioService', _servicesPortfolioService2['default']);
 
-},{"./controllers/about.controller":3,"./controllers/contact.controller":4,"./controllers/home.controller":5,"./services/portfolio.service":7,"angular":11}],7:[function(require,module,exports){
+},{"./controllers/about.controller":3,"./controllers/contact.controller":4,"./controllers/hobbies.controller":5,"./controllers/mywork.controller":6,"./controllers/single.controller":7,"./services/portfolio.service":9,"angular":13}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -140,7 +183,7 @@ PortfolioService.$inject = ['$state'];
 exports['default'] = PortfolioService;
 module.exports = exports['default'];
 
-},{}],8:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -161,9 +204,9 @@ require('./app-core/index');
 
 require('./app-layout/index');
 
-_angular2['default'].module('app', ['app.core', 'app.layout', 'ui.router']);
+_angular2['default'].module('app', ['app.core', 'app.layout']);
 
-},{"./app-core/index":2,"./app-layout/index":6,"angular":11,"angular-ui-router":9,"jquery":12}],9:[function(require,module,exports){
+},{"./app-core/index":2,"./app-layout/index":8,"angular":13,"angular-ui-router":11,"jquery":14}],11:[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.2.15
@@ -4534,7 +4577,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],10:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 /**
  * @license AngularJS v1.4.8
  * (c) 2010-2015 Google, Inc. http://angularjs.org
@@ -33553,11 +33596,11 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],11:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":10}],12:[function(require,module,exports){
+},{"./angular":12}],14:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -42769,7 +42812,7 @@ return jQuery;
 
 }));
 
-},{}]},{},[8])
+},{}]},{},[10])
 
 
 //# sourceMappingURL=main.js.map

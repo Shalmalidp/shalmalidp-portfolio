@@ -8,5 +8,5 @@ import './app-layout/index';
 
 
 angular
-  .module('app',['app.core','app.layout','ui.router'])
+  .module('app',['app.core','app.layout'])
   ;
