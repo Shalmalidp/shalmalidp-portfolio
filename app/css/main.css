@@ -8470,22 +8470,80 @@ th.hide-for-touch {
 .name h1 a {
   color: #C7C1A7 !important; }
 
+.right li a {
+  color: #C7C1A7 !important; }
+
+.right li a:hover {
+  color: #768A85 !important; }
+
 h4 {
   text-align: center;
   color: grey;
-  font-size: 5em;
+  font-size: 3em;
   font-family: 'Lora', serif; }
 
 body {
-  background: #FBF7E3;
-  font-family: 'Old Standard TT', serif; }
+  background: #C7C1A6;
+  font-family: 'Old Standard TT', serif;
+  position: relative; }
+
+ul {
+  list-style: none; }
+
+.mylist {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top; }
+
+.allDetails {
+  width: 100%;
+  display: inline-block;
+  margin: 2% auto; }
+
+.projectImg img {
+  display: inline-block;
+  max-width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.btn {
+  width: 100%;
+  margin: 2% auto;
+  display: inline-block; }
+
+#b1, #b2 {
+  color: #768A85;
+  background: none !important;
+  border: 1px solid #768A85;
+  border-radius: 10px; }
+
+#b1:hover, #b2:hover {
+  font-weight: bold;
+  font-style: italic; }
+
+.projectInfo {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  vertical-align: top;
+  font-size: 1em; }
+
+h5 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.2em; }
+
+label {
+  font-size: 0.9em;
+  width: 100%;
+  font-family: 'Lobster', cursive;
+  height: 45px; }
 
 footer {
+  width: 100%;
+  overflow: auto;
   background: #768A85;
-  font-family: 'Lora', serif; }
-
-p {
-  height: 20px; }
+  font-family: 'Lora', serif;
+  position: absolute; }
 
 .footer-list {
   list-style: none; }
@@ -8496,6 +8554,7 @@ p {
 
 .footer-list a {
   margin-left: 20px;
+  font-size: 0.9em;
   color: #C7C1A7;
   font-family: 'Lora', serif; }
 
@@ -8508,7 +8567,7 @@ p {
 .foo-heading {
   text-align: center;
   color: #FBF7E3;
-  font-size: 5em;
+  font-size: 3em;
   font-family: 'Lora', serif; }
 
 /*# sourceMappingURL=main.css.map */

@@ -22,9 +22,9 @@ let config = function($stateProvider, $urlRouterProvider) {
     })
 
     .state('root.single',{
-      url : 'single/:id',
-      controller :'SingleController',
-      templateUrl : 'templates/single.tpl.html'
+      url : '/resume',
+      controller :'ResumeController',
+      templateUrl : 'templates/resume.tpl.html'
     })
 
     .state('root.mywork',{

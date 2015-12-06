@@ -1,1 +1,22 @@
-<h4>my work tpl </h4>
+<h4>My Work</h4>
+<hr>
+
+
+<ul>
+  <div class="allDetails">
+    <li class = 'mylist' ng-repeat='project in vm.projects'>
+      <h5>{{project.name}}</h5>
+      <div class='projectImg'>
+        <img ng-src="{{project.image}}">  
+      </div>
+      <div class='projectInfo'>
+        <label>{{project.Description}}</label>
+        <div class="btn"> 
+          <a href="{{project.github}}"><button id='b1'>GitHub Code</button></a>
+          <a href="{{project.surgeurl}}"><button id='b2'>Deployment</button></a>   
+        </div>
+      </div>
+    </li>
+
+  </div>
+</ul>

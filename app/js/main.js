@@ -21,9 +21,9 @@ var config = function config($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/hobbies.tpl.html'
 
   }).state('root.single', {
-    url: 'single/:id',
-    controller: 'SingleController',
-    templateUrl: 'templates/single.tpl.html'
+    url: '/resume',
+    controller: 'ResumeController',
+    templateUrl: 'templates/resume.tpl.html'
   }).state('root.mywork', {
     url: '/work',
     controller: 'MyWorkController as vm',
@@ -43,6 +43,24 @@ module.exports = exports['default'];
 },{}],2:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports['default'] = {
+  URL: 'https://api.parse.com/1/',
+  CONFIG: {
+    headers: {
+      'X-Parse-Application-Id': 'I2FIGwXINMqNvRjlPl5SsUukAL1CjAfHe3sHup2b',
+      'X-Parse-REST-API-Key': 'FrzJTozBUxvztTLo3FNg9lbvrpXlh0Yb0YWbn3hO'
+    }
+  }
+
+};
+module.exports = exports['default'];
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 var _angular = require('angular');
@@ -55,9 +73,13 @@ var _config = require('./config');
 
 var _config2 = _interopRequireDefault(_config);
 
-_angular2['default'].module('app.core', ['ui.router']).config(_config2['default']);
+var _constantsParseConstant = require('./constants/parse.constant');
 
-},{"./config":1,"angular":13,"angular-ui-router":11}],3:[function(require,module,exports){
+var _constantsParseConstant2 = _interopRequireDefault(_constantsParseConstant);
+
+_angular2['default'].module('app.core', ['ui.router']).config(_config2['default']).constant('PARSE', _constantsParseConstant2['default']);
+
+},{"./config":1,"./constants/parse.constant":2,"angular":14,"angular-ui-router":12}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -73,7 +95,7 @@ AboutController.$inject = [];
 exports["default"] = AboutController;
 module.exports = exports["default"];
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -89,7 +111,7 @@ ContactController.$inject = [];
 exports["default"] = ContactController;
 module.exports = exports["default"];
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -102,36 +124,45 @@ HobbiesController.$inject = [];
 exports["default"] = HobbiesController;
 module.exports = exports["default"];
 
-},{}],6:[function(require,module,exports){
-"use strict";
+},{}],7:[function(require,module,exports){
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var MyWorkController = function MyWorkController() {
+var MyWorkController = function MyWorkController(PortfolioService) {
 
   var vm = this;
+  vm.projects = [];
+
+  activate();
+
+  function activate() {
+    PortfolioService.getAllProjects().then(function (res) {
+      vm.projects = res.data.results;
+    });
+  }
 };
 
-MyWorkController.$inject = [];
+MyWorkController.$inject = ['PortfolioService'];
 
-exports["default"] = MyWorkController;
-module.exports = exports["default"];
+exports['default'] = MyWorkController;
+module.exports = exports['default'];
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var SingleController = function SingleController() {};
+var ResumeController = function ResumeController() {};
 
-SingleController.$inject = [];
+ResumeController.$inject = [];
 
-exports["default"] = SingleController;
+exports["default"] = ResumeController;
 module.exports = exports["default"];
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -158,9 +189,9 @@ var _controllersHobbiesController = require('./controllers/hobbies.controller');
 
 var _controllersHobbiesController2 = _interopRequireDefault(_controllersHobbiesController);
 
-var _controllersSingleController = require('./controllers/single.controller');
+var _controllersResumeController = require('./controllers/resume.controller');
 
-var _controllersSingleController2 = _interopRequireDefault(_controllersSingleController);
+var _controllersResumeController2 = _interopRequireDefault(_controllersResumeController);
 
 //services
 
@@ -168,22 +199,30 @@ var _servicesPortfolioService = require('./services/portfolio.service');
 
 var _servicesPortfolioService2 = _interopRequireDefault(_servicesPortfolioService);
 
-_angular2['default'].module('app.layout', ['app.core']).controller('MyWorkController', _controllersMyworkController2['default']).controller('AboutController', _controllersAboutController2['default']).controller('ContactController', _controllersContactController2['default']).controller('HobbiesController', _controllersHobbiesController2['default']).controller('SingleController', _controllersSingleController2['default']).service('PortfolioService', _servicesPortfolioService2['default']);
+_angular2['default'].module('app.layout', ['app.core']).controller('MyWorkController', _controllersMyworkController2['default']).controller('AboutController', _controllersAboutController2['default']).controller('ContactController', _controllersContactController2['default']).controller('HobbiesController', _controllersHobbiesController2['default']).controller('ResumeController', _controllersResumeController2['default']).service('PortfolioService', _servicesPortfolioService2['default']);
 
-},{"./controllers/about.controller":3,"./controllers/contact.controller":4,"./controllers/hobbies.controller":5,"./controllers/mywork.controller":6,"./controllers/single.controller":7,"./services/portfolio.service":9,"angular":13}],9:[function(require,module,exports){
+},{"./controllers/about.controller":4,"./controllers/contact.controller":5,"./controllers/hobbies.controller":6,"./controllers/mywork.controller":7,"./controllers/resume.controller":8,"./services/portfolio.service":10,"angular":14}],10:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var PortfolioService = function PortfolioService($state) {};
+var PortfolioService = function PortfolioService($state, PARSE, $http) {
+  var url = PARSE.URL + 'classes/projects';
 
-PortfolioService.$inject = ['$state'];
+  this.getAllProjects = getAllProjects;
+
+  function getAllProjects() {
+    return $http.get(url, PARSE.CONFIG);
+  }
+};
+
+PortfolioService.$inject = ['$state', 'PARSE', '$http'];
 
 exports['default'] = PortfolioService;
 module.exports = exports['default'];
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -206,7 +245,7 @@ require('./app-layout/index');
 
 _angular2['default'].module('app', ['app.core', 'app.layout']);
 
-},{"./app-core/index":2,"./app-layout/index":8,"angular":13,"angular-ui-router":11,"jquery":14}],11:[function(require,module,exports){
+},{"./app-core/index":3,"./app-layout/index":9,"angular":14,"angular-ui-router":12,"jquery":15}],12:[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.2.15
@@ -4577,7 +4616,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /**
  * @license AngularJS v1.4.8
  * (c) 2010-2015 Google, Inc. http://angularjs.org
@@ -33596,11 +33635,11 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":12}],14:[function(require,module,exports){
+},{"./angular":13}],15:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -42812,7 +42851,7 @@ return jQuery;
 
 }));
 
-},{}]},{},[10])
+},{}]},{},[11])
 
 
 //# sourceMappingURL=main.js.map
