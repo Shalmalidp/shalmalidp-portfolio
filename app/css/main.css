@@ -8538,6 +8538,15 @@ label {
   font-family: 'Lobster', cursive;
   height: 45px; }
 
+.main {
+  display: inline-block;
+  margin-left: 5%; }
+
+.art {
+  width: 30%;
+  height: 300px;
+  margin: 0.5%; }
+
 footer {
   width: 100%;
   overflow: auto;
