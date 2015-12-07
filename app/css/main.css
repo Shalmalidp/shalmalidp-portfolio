@@ -8468,7 +8468,9 @@ th.hide-for-touch {
   content: ""; }
 
 .name h1 a {
-  color: #C7C1A7 !important; }
+  color: #C7C1A7 !important;
+  font-size: 2em;
+  font-family: 'Old Standard TT', serif; }
 
 .right li a {
   color: #C7C1A7 !important; }
@@ -8535,8 +8537,9 @@ h5 {
 label {
   font-size: 0.9em;
   width: 100%;
-  font-family: 'Lobster', cursive;
-  height: 45px; }
+  font-family: 'Old Standard TT', serif;
+  height: 45px;
+  color: #768A85; }
 
 .main {
   display: inline-block;
