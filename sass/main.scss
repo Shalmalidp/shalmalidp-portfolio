@@ -9,6 +9,7 @@
   color :#C7C1A7 !important;
   font-size : 2em;
   font-family: 'Old Standard TT', serif;
+  //font-family: 'Raleway', sans-serif;
 }
 
 .right li a{
@@ -33,7 +34,7 @@ body {
   // background-repeat:no-repeat;
   // background-size :100% 3000px;
   background : #C7C1A6;
-  font-family: 'Old Standard TT', serif;
+  //font-family: 'Old Standard TT', serif;
   position:relative;
 }
 
@@ -43,10 +44,11 @@ ul{
   list-style :none;
 }
 .mylist{
-    //border:1px solid brown;
+    //border:0.5em solid white;;
     display : inline-block;
-     width:50%;
+     width:48%;
   // margin : 1% 5% 0 0;
+  margin-right:1%;
     vertical-align:top;
 }
 .allDetails{
@@ -65,20 +67,25 @@ ul{
 }
 
 .btn{
+  //border:1px solid black;
   width:100%;
-  margin: 2% auto;
+  //margin: 2% auto;
   display: inline-block; 
+  vertical-align:center;
 }
 #b1,#b2{
   color:#768A85; 
   background:none !important; 
-  border:1px solid #768A85;
+  border:0.1em solid #768A85;
   border-radius :10px;
+  margin:5% auto;
+  font-family: 'Raleway', sans-serif;
 } 
 
 #b1:hover , #b2:hover{
   font-weight:bold;
   font-style:italic;
+  font-family: 'Raleway', sans-serif;
 }
 
 .projectInfo{
@@ -90,15 +97,15 @@ ul{
 }
 
 h5{
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
 }
 
 label{
   font-size:0.9em;
   width:100%;
-  font-family: 'Old Standard TT', serif;
-  height:45px;
+  font-family: 'Raleway', sans-serif;
+  height:30px;
   color: #768A85;
 }
 
