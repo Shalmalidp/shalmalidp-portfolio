@@ -1,4 +1,18 @@
-<h4>My Work</h4>
+<h4>Work</h4>
+<div class="faIcons">  
+  <a href="mailto:shalmalidalvi@hotmail.com" target ="_blank"><i class="fa fa-envelope fa-2x" ></i></a>  
+
+  <a href="https://www.linkedin.com/in/shalmali-padgaokar-99a570b" target ="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+
+<!--  <i class="fa fa-phone-square fa-2x">
+  <a href="">(423) 580-1318</a>
+</i> -->
+
+  <a href="https://github.com/Shalmalidp" target ="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+
+
+  <a href="https://twitter.com/ShalmaliDp" target ="_blank"><i class="fa fa-twitter-square fa-2x"> </i></a>    
+</div>
 <hr>
 
 
@@ -10,12 +24,13 @@
         <img ng-src="{{project.image}}">  
       </div>
       <div class='projectInfo'>
-        <label>{{project.Description}}</label>
-        <div class="btn"> 
-          <a href="{{project.github}}"><button id='b1'>GitHub Code</button></a>
-          <a href="{{project.surgeurl}}"><button id='b2'>Deployment</button></a>   
-        </div>
+        <label id='l1'>{{project.Description}}</label>
+        <label id='l2'>{{project.Skills}}</label>
       </div>
+        <div class="btn"> 
+          <a href="{{project.github}}"><button id='b1'>CODE</button></a>
+          <a href="{{project.surgeurl}}"><button id='b2'>LIVE</button></a>  
+        </div>
     </li>
 
   </div>
