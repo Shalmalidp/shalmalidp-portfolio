@@ -8468,22 +8468,46 @@ th.hide-for-touch {
   content: ""; }
 
 body {
-  background: #EEE;
+  background: #B7E1DF;
   position: relative; }
 
 .hello {
   background-color: none;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  animation-name: hello;
+  animation-duration: 3s; }
+
+@keyframes hello {
+  0% {
+    background-color: none;
+    left: 0px;
+    top: 0px; }
+  100% {
+    background-color: none;
+    left: 7%;
+    top: 40%; } }
+
+.title {
+  background-color: none;
   font-family: 'Old Standard TT', serif;
   position: absolute;
-  top: 35%;
-  left: 12%;
-  font-size: 2em;
-  color: #FBF7E3; }
+  top: 58%;
+  left: 9%;
+  animation-name: title1;
+  animation-duration: 0.5s; }
 
-.hello:hover {
-  transition-property: font-size;
-  transition-duration: 3s;
-  font-size: 7em; }
+@keyframes title1 {
+  0% {
+    background-color: none;
+    left: 0%;
+    top: 58%; }
+  100% {
+    background-color: none;
+    left: 9%;
+    top: 58%; } }
 
 .name h1 a {
   color: #D9FFFF !important;
@@ -8504,19 +8528,32 @@ h4 {
 
 .faIcons {
   position: absolute;
-  top: 10%;
+  top: 17%;
   right: -7%;
   width: 20%; }
   .faIcons .fa {
     padding-left: 2%;
     color: grey; }
 
+.frill {
+  position: relative;
+  margin-top: 2%;
+  height: 150px; }
+  .frill .frill-title {
+    position: absolute;
+    top: 18%;
+    left: 10%; }
+
+.aboutPage {
+  background: url("../images/bg.png");
+  padding-bottom: 5%; }
+
 .about {
   display: inline-block;
   width: 90%;
   margin: 5% auto; }
   .about .me {
-    width: 49%;
+    width: 39%;
     display: inline-block;
     margin-left: 5%;
     padding-top: 0;
@@ -8524,13 +8561,24 @@ h4 {
   .about .aboutImg {
     display: inline-block;
     width: 45%;
-    border: 0.4em solid #FBF7E3; }
+    vertical-align: top;
+    border: 0.4em solid #FBF7E3;
+    margin-top: 5%;
+    margin-left: 10%; }
+  .about .sign {
+    width: 25%; }
+
+.resumePage {
+  margin-top: -25px;
+  padding-top: 2%;
+  background: url("../images/bg.png");
+  padding-bottom: 5%; }
 
 .resumeContainer {
   position: relative; }
 
 .resume {
-  border: 0.4em solid #FBF7E3;
+  border: 0.4em solid #768A85;
   width: 80%;
   margin: 10%; }
 
@@ -8540,10 +8588,16 @@ h4 {
   left: 32%;
   margin: 0 5% 5% 10%;
   color: #768A85;
-  background: #FBF7E3 !important;
+  background: #fff !important;
   border: 0.1em solid #768A85;
   border-radius: 10px;
   font-family: 'Raleway', sans-serif; }
+
+.workPage {
+  margin-top: -25px;
+  padding-top: 2%;
+  background: url("../images/bg.png");
+  padding-bottom: 5%; }
 
 ul {
   list-style: none;
@@ -8562,7 +8616,7 @@ ul {
 
 .projectImg img {
   display: inline-block;
-  border: 0.4em solid #FBF7E3;
+  border: 0.4em solid #768A85;
   max-width: 100%;
   height: 350px;
   overflow: hidden;
@@ -8576,7 +8630,7 @@ ul {
 
 #b1, #b2 {
   color: #768A85;
-  background: #FBF7E3 !important;
+  background: #fff !important;
   border: 0.1em solid #768A85;
   border-radius: 10px;
   margin: 5% 5% 8% 10%;
@@ -8633,7 +8687,7 @@ footer {
   padding: 10% 10%;
   width: 100%;
   overflow: auto;
-  background: #1D4675;
+  background: #333333;
   font-family: 'Lora', serif;
   position: absolute; }
 
