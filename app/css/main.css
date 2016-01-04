@@ -8483,8 +8483,8 @@ body {
 @keyframes hello {
   0% {
     background-color: none;
-    left: 0px;
-    top: 0px; }
+    left: 0%;
+    top: 0%; }
   100% {
     background-color: none;
     left: 7%;
@@ -8546,6 +8546,7 @@ h4 {
 
 .aboutPage {
   background: url("../images/bg.png");
+  background-position: center;
   padding-bottom: 5%; }
 
 .about {
