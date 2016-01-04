@@ -8471,6 +8471,9 @@ body {
   background: #B7E1DF;
   position: relative; }
 
+.name-title {
+  border: 1em solid green; }
+
 .hello {
   background-color: none;
   z-index: 1;
@@ -8542,7 +8545,8 @@ h4 {
   .frill .frill-title {
     position: absolute;
     top: 18%;
-    left: 10%; }
+    left: 10%;
+    font-size: 1em; }
 
 .aboutPage {
   background: url("../images/bg.png");
@@ -8688,6 +8692,7 @@ footer {
   padding: 10% 10%;
   width: 100%;
   overflow: auto;
+  font-size: 0.9em;
   background: #333333;
   font-family: 'Lora', serif;
   position: absolute; }
@@ -8707,7 +8712,8 @@ footer {
   font-family: 'Lora', serif; }
 
 .footer-text {
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 0.9em; }
 
 .footer-list a:hover {
   color: #FFF; }

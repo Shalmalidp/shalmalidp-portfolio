@@ -8,6 +8,10 @@ body {
   position:relative;
 }
 
+.name-title{
+  border:1em solid green;
+}
+
 .hello{
   background-color:none;
   z-index :1;
@@ -92,6 +96,7 @@ h4{
     position :absolute;
     top:18%;
     left: 10%;
+    font-size: 1em;
   }
 }
 
@@ -284,6 +289,7 @@ footer{
   width :100%;
   overflow:auto;
   //margin: -19px 0 0 0;
+  font-size:0.9em;
   background:#333333;
   font-family: 'Lora', serif;
   position :absolute;
@@ -309,6 +315,7 @@ footer{
 
 .footer-text{
   text-decoration :none;
+  font-size:0.9em;
   //color :#FBF7E3;
 }
 
