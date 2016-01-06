@@ -8820,6 +8820,8 @@ footer {
     top: 30% !important;
     left: 10% !important;
     font-size: 1em; }
+  .resumePage .frill-title {
+    left: 15% !important; }
   .about {
     display: inline-block;
     width: 100%;
