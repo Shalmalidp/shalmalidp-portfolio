@@ -8,9 +8,9 @@ body {
   position:relative;
 }
 
-.name-title{
-  border:1em solid green;
-}
+// .name-title{
+//   border:1em solid green;
+// }
 
 .hello{
   background-color:none;
@@ -56,11 +56,20 @@ body {
   font-family: 'Old Standard TT', serif;
 }
 
-.right li a{
+nav {
+  position: relative;
+}
+
+nav .right{
+  position :absolute;
+  left:1%;
+}
+
+nav .right li a{
  color: #C7C1A7 !important; 
 }
 
-.right li a:hover{
+nav .right li a:hover{
  color: #FBF7E3 !important; 
 }
 
@@ -328,4 +337,279 @@ footer{
   color :#D9FFFF;
   font-size :3em;
   font-family: 'Lora', serif;
+}
+
+//RESPONSIVE WD.... FOR IPHONE AND ANDROID.
+
+@media only screen and(min-width : 150px) and (max-width:650px){
+
+  .hello{
+    background-color:none;
+    z-index :1;
+    position:absolute;
+    top :20%;
+    left:4%;
+    animation-name: hello;
+    animation-duration: 3s;
+  }
+  @keyframes hello {
+      0%   {background-color:none; left:0%; top:0%;}
+      100%  {background-color:none; left: 4%; top:20%; }
+  }
+
+
+  .title{
+    background-color:none;
+    font-family: 'Old Standard TT', serif;
+   // background-image:url('./images/title.png');
+    width:90%;
+    position:absolute;
+    top :25%;
+    left:4%;
+    animation-name: title1;
+    animation-duration: 0.5s;
+  }
+  @keyframes title1{
+      0%   {background-color:none; left:0%; top:25%;}
+      100%  {background-color:none; left: 4%; top:25%; }
+  }
+
+
+
+//HEADER ..RWD
+
+
+nav{
+  width: 100%;
+}
+
+
+nav .right li a{
+  font-size: 80%;
+  
+}
+
+
+
+// FA ICONS.. RWD
+.faIcons{
+  //display: block; 
+  position:absolute;
+  top :10%;
+  right: -8%;
+  width : 50%;
+
+  .fa{
+    padding-left:1%;
+    color:grey;
+
+  }
+}
+
+//FRILL..RWD
+
+.frill{
+  position:relative;
+  margin-top:2%;
+  width: 150px;
+}
+
+.resumePage .frill, .workPage .frill{
+  margin-top : 7%;
+}
+
+  .frill-title{
+    width:100%;
+    position :absolute;
+    top:30% !important;
+    left:35% !important;
+    font-size: 1em;
+  }
+
+  //RESUME ...RWD
+
+  #b3{
+  position:absolute;
+  top:-5% !important;
+  left :15%;
+  margin:0 5% 15% 10% !important;
+  color:#768A85;
+  background:#fff!important; 
+  border:0.1em solid #768A85;
+  border-radius :10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+  //ABOUT.....RWD
+
+.aboutPage{
+  background: url('../images/bg.png');
+  background-position:center;
+  padding-bottom : 5%;
+  
+}
+.aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
+  width:100%;
+  position :absolute;
+  top:30% !important;
+  left:10% !important;
+  font-size: 1em;
+}
+
+.about{
+  display:inline-block;
+  width :100% ;
+  margin: 5% auto;
+}
+
+  .me p{
+    //border :1px solid red;
+    width :300px;
+    display: block;
+    margin-left :5%;
+    padding-top:0;
+    margin-top :5%;
+    color : #768A85;
+    font-size: 80%;
+
+
+  }
+  .aboutImg{
+ 
+    width :300px !important;
+    // vertical-align:top;
+    display :block;
+    border :0.4em solid #FBF7E3;
+    
+  }
+  
+  .sign{
+    display: none;
+    
+  }
+
+  //WORK ...RWD
+
+
+.workPage{
+  margin-top:-25px;
+  margin-left: 0 !important;
+  padding-top :2%;
+  background: url('../images/bg.png');
+  //background-repeat-y: no-repeat;
+  padding-bottom : 5%;
+}
+
+ul{
+  list-style :none;
+  padding-left :5%;
+}
+.mylist{
+    //border:0.5em solid white;;
+    display :block;
+     width:100%;
+  // margin : 1% 0 0 5%;
+  margin: 0 3% 0 -5%;
+    vertical-align:top;
+}
+.allDetails{
+  width :98%;
+  display:inline-block;
+  margin : 0 auto;
+  //transform :rotate(45deg);
+}
+
+#b1,#b2{
+  color:#768A85;
+  font-size: 0.9em; 
+  background:#fff !important; 
+  border:0.1em solid #768A85;
+  border-radius :10px;
+  //padding :5%;
+  margin:5% auto;
+  font-family: 'Raleway', sans-serif;
+} 
+
+
+.projectInfo{
+  display : inline-block;
+  height:45px;
+  margin: 1% auto;
+  font-family: 'Lobster', cursive;
+  vertical-align:top; 
+  font-size:0.9em;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+}
+
+label{
+  font-size:0.9em;
+  margin-bottom:2%;
+  line-height:100%;
+  width:100%;
+  font-family: 'Raleway', sans-serif;
+  height:30px;
+  //color: #768A85;
+  color:black;
+}
+
+#l2{
+  font-weight:600;
+  color:black;
+}
+
+
+
+
+  //ART ..RWD
+  .main{
+  display : inline-block;
+  margin-left: 5%;
+  color:#768A85;
+  font-family: 'Raleway', sans-serif;
+
+  p{
+    width :90%;
+    font-size: 87.5%;
+  }
+}
+// .art-main{
+//   margin : 7% auto;
+// }
+
+
+.art{
+  width :30%;
+  height:100px;
+}
+
+
+  //FOOTER ..RWD
+
+  footer{
+    font-size:60%;
+    margin-bottom: 12%;
+  }
+
+
+.footer-list{
+  list-style:none;
+  //padding-left: 10px !important;
+}
+
+.footer-list a{
+  //display: none;
+  font-size : 40%;
+}
+
+
+
+
+
+
+
+
 }
