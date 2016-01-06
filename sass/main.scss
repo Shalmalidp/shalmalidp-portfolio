@@ -57,13 +57,20 @@ body {
 }
 
 nav {
+  width :100%;
   position: relative;
 }
 
 nav .right{
+  width: 100%;
   position :absolute;
   left:1%;
 }
+
+nav .right li{
+   display: inline-block;
+   padding: 1%;
+ } 
 
 nav .right li a{
  color: #C7C1A7 !important; 
@@ -83,7 +90,7 @@ h4{
 // FA ICONS
 .faIcons{
   position:absolute;
-  top :17%;
+  top :10% !important;
   right:-7%;
   width : 20%;
 
@@ -341,7 +348,7 @@ footer{
 
 //RESPONSIVE WD.... FOR IPHONE AND ANDROID.
 
-@media only screen and(min-width : 150px) and (max-width:650px){
+@media only screen and (min-width : 150px) and (max-width:650px){
 
   .hello{
     background-color:none;
@@ -380,12 +387,21 @@ footer{
 
 
 nav{
+//  position : fixed;
+  height :auto;
   width: 100%;
 }
+nav .right{
+  width :100%;
+  padding:2%;
+  display:block;
+}
 
-
+nav .right li{
+}
 nav .right li a{
   font-size: 80%;
+  
   
 }
 
@@ -448,7 +464,7 @@ nav .right li a{
   padding-bottom : 5%;
   
 }
-.aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
+.contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
   width:100%;
   position :absolute;
   top:30% !important;
