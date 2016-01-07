@@ -8469,7 +8469,8 @@ th.hide-for-touch {
 
 body {
   background: #B7E1DF;
-  position: relative; }
+  position: relative;
+  font-size: 87.5%; }
 
 .hello {
   background-color: none;
@@ -8525,7 +8526,8 @@ nav .right {
 
 nav .right li {
   display: inline-block;
-  padding: 1%; }
+  padding: 1%;
+  font-size: 87.5%; }
 
 nav .right li a {
   color: #C7C1A7 !important; }
@@ -8541,8 +8543,8 @@ h4 {
 
 .faIcons {
   position: absolute;
-  top: 10% !important;
-  right: -7%;
+  top: 20% !important;
+  right: -5%;
   width: 20%; }
   .faIcons .fa {
     padding-left: 2%;
@@ -8550,12 +8552,13 @@ h4 {
 
 .frill {
   position: relative;
+  width: 60%;
   margin-top: 2%;
   height: 150px; }
   .frill .frill-title {
     position: absolute;
     top: 18%;
-    left: 10%;
+    left: 17%;
     font-size: 1em; }
 
 .aboutPage {
@@ -8735,6 +8738,92 @@ footer {
   font-size: 3em;
   font-family: 'Lora', serif; }
 
+@media only screen and (min-width: 651px) and (max-width: 768px) {
+  .hello {
+    background-color: none;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    animation-name: hello;
+    animation-duration: 3s; }
+  @keyframes hello {
+    0% {
+      background-color: none;
+      left: 0%;
+      top: 0%; }
+    100% {
+      background-color: none;
+      left: 4%;
+      top: 20%; } }
+  .title {
+    background-color: none;
+    font-family: 'Old Standard TT', serif;
+    width: 90%;
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    animation-name: title1;
+    animation-duration: 0.5s; }
+  @keyframes title1 {
+    0% {
+      background-color: none;
+      left: 0%;
+      top: 27%; }
+    100% {
+      background-color: none;
+      left: 4%;
+      top: 27%; } }
+  .faIcons {
+    position: absolute !important;
+    right: 3% !important;
+    top: 7% !important;
+    width: 20%; }
+    .faIcons .fa {
+      padding-left: 1%;
+      color: grey; }
+  .frill {
+    position: relative;
+    margin-top: 2%;
+    width: 150px; }
+  .resumePage .frill, .workPage .frill {
+    margin-top: 3%; }
+  .contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title {
+    width: 100%;
+    position: absolute;
+    top: 15% !important;
+    left: 25% !important;
+    font-size: 1em; }
+  .resumePage .frill-title {
+    left: 30% !important; }
+  .hobbiesPage .frill-title {
+    top: 15%;
+    left: 45%;
+    width: 100%; }
+  #b3 {
+    position: absolute;
+    top: 0% !important;
+    left: 30% !important;
+    margin: 0 5% 15% 10% !important;
+    color: #768A85;
+    background: #fff !important;
+    border: 0.1em solid #768A85;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif; }
+  .me p {
+    width: 300px;
+    display: block;
+    margin-left: 5%;
+    padding-top: 0;
+    margin-top: 5%;
+    color: #768A85;
+    font-size: 97.5%; }
+  .aboutImg {
+    width: 300px !important;
+    display: block;
+    border: 0.4em solid #FBF7E3; } }
+
 @media only screen and (min-width: 150px) and (max-width: 650px) {
   .hello {
     background-color: none;
@@ -8771,6 +8860,14 @@ footer {
       background-color: none;
       left: 4%;
       top: 25%; } }
+  .faIcons {
+    position: absolute;
+    top: 10% !important;
+    right: -8%;
+    width: 50%; }
+    .faIcons .fa {
+      padding-left: 1%;
+      color: grey; }
   nav {
     height: auto;
     width: 100%; }
@@ -8780,14 +8877,6 @@ footer {
     display: block; }
   nav .right li a {
     font-size: 80%; }
-  .faIcons {
-    position: absolute;
-    top: 10%;
-    right: -8%;
-    width: 50%; }
-    .faIcons .fa {
-      padding-left: 1%;
-      color: grey; }
   .frill {
     position: relative;
     margin-top: 2%;
@@ -8800,6 +8889,14 @@ footer {
     top: 30% !important;
     left: 35% !important;
     font-size: 1em; }
+  .contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title {
+    width: 100%;
+    position: absolute;
+    top: 30% !important;
+    left: 10% !important;
+    font-size: 1em; }
+  .resumePage .frill-title {
+    left: 15% !important; }
   #b3 {
     position: absolute;
     top: -5% !important;
@@ -8814,14 +8911,6 @@ footer {
     background: url("../images/bg.png");
     background-position: center;
     padding-bottom: 5%; }
-  .contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title {
-    width: 100%;
-    position: absolute;
-    top: 30% !important;
-    left: 10% !important;
-    font-size: 1em; }
-  .resumePage .frill-title {
-    left: 15% !important; }
   .about {
     display: inline-block;
     width: 100%;

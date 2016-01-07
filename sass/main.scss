@@ -6,6 +6,7 @@
 body {
   background : #B7E1DF;
   position:relative;
+  font-size: 87.5%;
 }
 
 // .name-title{
@@ -70,6 +71,7 @@ nav .right{
 nav .right li{
    display: inline-block;
    padding: 1%;
+   font-size: 87.5%;
  } 
 
 nav .right li a{
@@ -90,8 +92,8 @@ h4{
 // FA ICONS
 .faIcons{
   position:absolute;
-  top :10% !important;
-  right:-7%;
+  top :20% !important;
+  right:-5%;
   width : 20%;
 
   .fa{
@@ -105,13 +107,14 @@ h4{
 //FRILL
 .frill{
   position:relative;
+  width:60%;
   margin-top:2%;
   height: 150px;
 
   .frill-title{
     position :absolute;
     top:18%;
-    left: 10%;
+    left: 17%;
     font-size: 1em;
   }
 }
@@ -346,6 +349,118 @@ footer{
   font-family: 'Lora', serif;
 }
 
+
+// ==================================================================
+//RESPONSIVE FOR IPAD AND IPAD MINI
+
+@media only screen and (min-width:651px) and (max-width:768px){
+  //HOME PAGE
+  .hello{
+    background-color:none;
+    z-index :1;
+    position:absolute;
+    top :20%;
+    left:4%;
+    animation-name: hello;
+    animation-duration: 3s;
+  }
+  @keyframes hello {
+      0%   {background-color:none; left:0%; top:0%;}
+      100%  {background-color:none; left: 4%; top:20%; }
+  }
+  .title{
+    background-color:none;
+    font-family: 'Old Standard TT', serif;
+   // background-image:url('./images/title.png');
+    width:90%;
+    position:absolute;
+    top :27%;
+    left:4%;
+    animation-name: title1;
+    animation-duration: 0.5s;
+  }
+  @keyframes title1{
+      0%   {background-color:none; left:0%; top:27%;}
+      100%  {background-color:none; left: 4%; top:27%; }
+  }
+
+// FA ICONS.. RWD
+.faIcons{
+  // border:1px solid black;
+  position:absolute !important;
+  right:3% !important;
+  top :7% !important;
+  width : 20%;
+
+  .fa{
+    padding-left:1%;
+    color:grey;
+
+  }
+}
+.frill{
+  position:relative;
+  margin-top:2%;
+  width: 150px;
+}
+.resumePage .frill, .workPage .frill{
+  margin-top : 3%;
+}
+  //FRILL TITLE
+  .contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
+  width:100%;
+  position :absolute;
+  top:15% !important;
+  left:25% !important;
+  font-size: 1em;
+}
+
+.resumePage .frill-title{
+  left:30% !important;
+}
+
+.hobbiesPage .frill-title{
+  top:15%;
+  left : 45%;
+  width:100%;
+}
+  //RESUME ...RWD
+
+  #b3{
+  position:absolute;
+  top:0% !important;
+  left :30% !important;
+  margin:0 5% 15% 10% !important;
+  color:#768A85;
+  background:#fff!important; 
+  border:0.1em solid #768A85;
+  border-radius :10px;
+  font-size: 0.9em;
+  font-family: 'Raleway', sans-serif;
+}
+
+//ABOUT
+ .me p{
+    //border :1px solid red;
+    width :300px;
+    display: block;
+    margin-left :5%;
+    padding-top:0;
+    margin-top :5%;
+    color : #768A85;
+    font-size: 97.5%;
+  }
+  .aboutImg{
+ 
+    width :300px !important;
+    display :block;
+    border :0.4em solid #FBF7E3;
+    
+  }
+
+
+}
+//=====================================================================
 //RESPONSIVE WD.... FOR IPHONE AND ANDROID.
 
 @media only screen and (min-width : 150px) and (max-width:650px){
@@ -382,6 +497,20 @@ footer{
   }
 
 
+// FA ICONS.. RWD
+.faIcons{
+  //display: block; 
+  position:absolute;
+  top :10% !important;
+  right: -8%;
+  width :50%;
+
+  .fa{
+    padding-left:1%;
+    color:grey;
+
+  }
+}
 
 //HEADER ..RWD
 
@@ -406,22 +535,6 @@ nav .right li a{
 }
 
 
-
-// FA ICONS.. RWD
-.faIcons{
-  //display: block; 
-  position:absolute;
-  top :10%;
-  right: -8%;
-  width : 50%;
-
-  .fa{
-    padding-left:1%;
-    color:grey;
-
-  }
-}
-
 //FRILL..RWD
 
 .frill{
@@ -441,6 +554,17 @@ nav .right li a{
     left:35% !important;
     font-size: 1em;
   }
+  .contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
+  width:100%;
+  position :absolute;
+  top:30% !important;
+  left:10% !important;
+  font-size: 1em;
+}
+
+.resumePage .frill-title{
+  left:15% !important;
+}
 
   //RESUME ...RWD
 
@@ -464,17 +588,7 @@ nav .right li a{
   padding-bottom : 5%;
   
 }
-.contactPage .frill-title, .aboutPage .frill-title, .workPage .frill-title, .resumePage .frill-title{
-  width:100%;
-  position :absolute;
-  top:30% !important;
-  left:10% !important;
-  font-size: 1em;
-}
 
-.resumePage .frill-title{
-  left:15% !important;
-}
 
 .about{
   display:inline-block;
@@ -491,8 +605,6 @@ nav .right li a{
     margin-top :5%;
     color : #768A85;
     font-size: 80%;
-
-
   }
   .aboutImg{
  
@@ -601,35 +713,28 @@ label{
 // }
 
 
-.art{
-  width :30%;
-  height:100px;
-}
-
-
-  //FOOTER ..RWD
-
-  footer{
-    font-size:60%;
-    margin-bottom: 12%;
+  .art{
+    width :30%;
+    height:100px;
   }
 
 
-.footer-list{
-  list-style:none;
-  //padding-left: 10px !important;
-}
+    //FOOTER ..RWD
 
-.footer-list a{
-  //display: none;
-  font-size : 40%;
-}
+    footer{
+      font-size:60%;
+      margin-bottom: 12%;
+    }
 
 
+  .footer-list{
+    list-style:none;
+    //padding-left: 10px !important;
+  }
 
-
-
-
-
+  .footer-list a{
+    //display: none;
+    font-size : 40%;
+  }
 
 }
