@@ -8491,6 +8491,13 @@ body {
     left: 7%;
     top: 40%; } }
 
+.logo {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  top: -7px;
+  left: 15px; }
+
 .title {
   background-color: none;
   font-family: 'Old Standard TT', serif;
@@ -8522,7 +8529,8 @@ nav {
 nav .right {
   width: 100%;
   position: absolute;
-  left: 1%; }
+  left: 1%;
+  margin-left: 60%; }
 
 nav .right li {
   display: inline-block;
@@ -8739,11 +8747,14 @@ footer {
   font-family: 'Lora', serif; }
 
 @media only screen and (min-width: 651px) and (max-width: 768px) {
+  body {
+    widht: 100%;
+    height: auto; }
   .hello {
     background-color: none;
     z-index: 1;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 4%;
     animation-name: hello;
     animation-duration: 3s; }
@@ -8755,13 +8766,17 @@ footer {
     100% {
       background-color: none;
       left: 4%;
-      top: 20%; } }
+      top: 30%; } }
+  .logo {
+    width: 8%;
+    top: -27% !important;
+    left: 1%; }
   .title {
     background-color: none;
     font-family: 'Old Standard TT', serif;
     width: 90%;
     position: absolute;
-    top: 27%;
+    top: 42%;
     left: 4%;
     animation-name: title1;
     animation-duration: 0.5s; }
@@ -8769,19 +8784,44 @@ footer {
     0% {
       background-color: none;
       left: 0%;
-      top: 27%; }
+      top: 42%; }
     100% {
       background-color: none;
       left: 4%;
-      top: 27%; } }
-  .faIcons {
+      top: 42%; } }
+  nav .right {
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    margin-left: 45%; }
+  .workPage .faIcons {
     position: absolute !important;
     right: 3% !important;
-    top: 7% !important;
+    top: 2% !important;
     width: 20%; }
-    .faIcons .fa {
-      padding-left: 1%;
-      color: grey; }
+  .contactPage .faIcons {
+    position: absolute !important;
+    right: 3% !important;
+    top: 33% !important;
+    width: 20%; }
+  .resumePage .faIcons {
+    position: absolute !important;
+    right: 3% !important;
+    top: 6.5% !important;
+    width: 20%; }
+  .aboutPage .faIcons {
+    position: absolute !important;
+    right: 3% !important;
+    top: 9% !important;
+    width: 20%; }
+  .hobbiesPage .faIcons {
+    position: absolute !important;
+    right: 3% !important;
+    top: 4.4% !important;
+    width: 20%; }
+  .fa {
+    padding-left: 1%;
+    color: grey; }
   .frill {
     position: relative;
     margin-top: 2%;
@@ -8822,7 +8862,85 @@ footer {
   .aboutImg {
     width: 300px !important;
     display: block;
-    border: 0.4em solid #FBF7E3; } }
+    border: 0.4em solid #FBF7E3; }
+  .workPage {
+    margin-top: -25px;
+    margin-left: 0 !important;
+    padding-top: 2%;
+    background: url("../images/bg.png");
+    padding-bottom: 5%; }
+  ul {
+    list-style: none;
+    padding-left: 5%; }
+  .mylist {
+    display: block;
+    width: 100%;
+    margin: 0 3% 4% -5%;
+    vertical-align: top; }
+  .allDetails {
+    width: 98%;
+    display: inline-block;
+    margin: 0 auto; }
+  #b1, #b2 {
+    color: #768A85;
+    font-size: 0.9em;
+    background: #fff !important;
+    border: 0.1em solid #768A85;
+    border-radius: 10px;
+    margin: 5% auto;
+    font-family: 'Raleway', sans-serif; }
+  .projectInfo {
+    display: inline-block;
+    height: 45px;
+    margin: 1% auto;
+    font-family: 'Lobster', cursive;
+    vertical-align: top;
+    font-size: 0.9em; }
+  h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em; }
+  label {
+    font-size: 0.9em;
+    margin-bottom: 2%;
+    line-height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    height: 30px;
+    color: black; }
+  #l2 {
+    font-weight: 600;
+    color: black; }
+  footer {
+    padding: 10% 10%;
+    width: 100%;
+    overflow: auto;
+    font-size: 0.9em;
+    background: #333333;
+    font-family: 'Lora', serif;
+    position: absolute; }
+  .footer-list {
+    list-style: none;
+    padding-left: 10%; }
+  .footer-list li {
+    display: inline-block;
+    margin: 10px 20px;
+    color: #D9FFFF;
+    font-size: 60%; }
+  .footer-list a {
+    font-size: 0.9em;
+    color: #D9FFFF;
+    font-family: 'Lora', serif; }
+  .footer-text {
+    text-decoration: none;
+    font-size: 0.9em; }
+  .footer-list a:hover {
+    color: #FFF; }
+  .foo-heading {
+    padding-bottom: 3%;
+    text-align: center;
+    color: #D9FFFF;
+    font-size: 3em;
+    font-family: 'Lora', serif; } }
 
 @media only screen and (min-width: 150px) and (max-width: 650px) {
   .hello {
@@ -8842,6 +8960,10 @@ footer {
       background-color: none;
       left: 4%;
       top: 20%; } }
+  .logo {
+    width: 8%;
+    top: 15%;
+    left: 1%; }
   .title {
     background-color: none;
     font-family: 'Old Standard TT', serif;
@@ -8874,7 +8996,8 @@ footer {
   nav .right {
     width: 100%;
     padding: 2%;
-    display: block; }
+    display: block;
+    margin-left: 20%; }
   nav .right li a {
     font-size: 80%; }
   .frill {
