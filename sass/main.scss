@@ -121,7 +121,7 @@ h4{
 
 //ABOUT
 .aboutPage{
-  background: url('../images/bg.png');
+  //background: url('../images/bg.png');
  background-position:center;
   padding-bottom : 5%;
 }
@@ -141,7 +141,7 @@ h4{
   }
   .aboutImg{
     display:inline-block;
-    width :45%;
+    //width :45%;
     vertical-align:top;
     border :0.4em solid #FBF7E3;
     margin-top :5%;
@@ -157,7 +157,7 @@ h4{
 .resumePage{
   margin-top:-25px;
   padding-top :2%;
-  background: url('../images/bg.png');
+  //background: url('../images/bg.png');
   padding-bottom : 5%;
 }
 
@@ -188,7 +188,7 @@ h4{
 .workPage{
   margin-top:-25px;
   padding-top :2%;
-  background: url('../images/bg.png');
+ // background: url('../images/bg.png');
   //background-repeat-y: no-repeat;
   padding-bottom : 5%;
 }
@@ -396,7 +396,7 @@ footer{
 
   //header NAV BAR
   nav{
-    width:100%;
+    width:100% !important;
   }
   nav .right{
   width: 100%;
@@ -516,7 +516,7 @@ footer{
   margin-top:-25px;
   margin-left: 0 !important;
   padding-top :2%;
-  background: url('../images/bg.png');
+  //background: url('../images/bg.png');
   //background-repeat-y: no-repeat;
   padding-bottom : 5%;
 }
@@ -760,7 +760,7 @@ nav .right li a{
   //ABOUT.....RWD
 
 .aboutPage{
-  background: url('../images/bg.png');
+  //background: url('../images/bg.png');
   background-position:center;
   padding-bottom : 5%;
   
@@ -804,7 +804,7 @@ nav .right li a{
   margin-top:-25px;
   margin-left: 0 !important;
   padding-top :2%;
-  background: url('../images/bg.png');
+  //background: url('../images/bg.png');
   //background-repeat-y: no-repeat;
   padding-bottom : 5%;
 }
