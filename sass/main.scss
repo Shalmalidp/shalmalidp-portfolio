@@ -351,10 +351,10 @@ footer{
 // ==================================================================
 //RESPONSIVE FOR IPAD AND IPAD MINI
 
-@media only screen and (min-width:651px) and (max-width:768px){
+@media only screen and (min-width:651px) and (max-width:1024px){
   
   body{
-    width:100%;
+    // max-width:100%;
     height:auto;
   }
   //HOME PAGE
@@ -363,13 +363,13 @@ footer{
     z-index :1;
     position:absolute;
     top :30%;
-    left:4%;
+    left:3%;
     animation-name: hello;
     animation-duration: 3s;
   }
   @keyframes hello {
       0%   {background-color:none; left:0%; top:0%;}
-      100%  {background-color:none; left: 4%; top:30%; }
+      100%  {background-color:none; left: 3%; top:30%; }
   }
 
 
@@ -385,13 +385,13 @@ footer{
     width:90%;
     position:absolute;
     top :42%;
-    left:4%;
+    left:3%;
     animation-name: title1;
     animation-duration: 0.5s;
   }
   @keyframes title1{
       0%   {background-color:none; left:0%; top:42%;}
-      100%  {background-color:none; left: 4%; top:42%; }
+      100%  {background-color:none; left: 3%; top:42%; }
   }
 
   //header NAV BAR
@@ -535,7 +535,10 @@ ul{
   width :98%;
   display:inline-block;
   margin : 0 auto;
-  //transform :rotate(45deg);
+}
+
+#b1{
+  margin-left: 20% !important; 
 }
 
 #b1,#b2{
@@ -544,7 +547,6 @@ ul{
   background:#fff !important; 
   border:0.1em solid #768A85;
   border-radius :10px;
-  //padding :5%;
   margin:5% auto;
   font-family: 'Raleway', sans-serif;
 } 
