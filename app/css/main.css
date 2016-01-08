@@ -8914,11 +8914,14 @@ footer {
     font-size: 0.9em;
     background: #333333;
     font-family: 'Lora', serif;
-    position: absolute; }
+    position: absolute;
+    padding-bottom: 50%;
+    padding-top: 25%; }
   .footer-list {
     list-style: none;
     padding-left: 10%; }
   .footer-list li {
+    width: 100%;
     display: inline-block;
     margin: 10px 20px;
     color: #D9FFFF;

@@ -590,6 +590,9 @@ label{
     background:#333333;
     font-family: 'Lora', serif;
     position :absolute;
+    padding-bottom : 50%;
+    padding-top :25%;
+
   }
 
 
@@ -599,6 +602,7 @@ label{
    
   }
   .footer-list li{
+    width:100%;
     display: inline-block;
     margin : 10px 20px;
     color :#D9FFFF;
