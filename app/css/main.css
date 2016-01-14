@@ -8639,7 +8639,7 @@ ul {
 .projectImg img {
   display: inline-block;
   border: 0.4em solid #768A85;
-  max-width: 100%;
+  width: 80%;
   height: 350px;
   overflow: hidden;
   margin: 0 auto; }
@@ -8898,6 +8898,13 @@ footer {
     font-family: 'Lobster', cursive;
     vertical-align: top;
     font-size: 0.9em; }
+  .projectImg img {
+    display: inline-block;
+    border: 0.4em solid #768A85;
+    width: 80%;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto; }
   h5 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em; }
