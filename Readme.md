@@ -1,8 +1,15 @@
-## Welcome to My Project
+## My Portfolio
 
-> I am your Readme.md file, you should probably update me.
+> This is my portfolio with some of my recent projects. 
+> Deployment http://shalmalidp.com
 
-
+## Tools Used
+- HTML5
+- CSS3
+- Javascript
+- jQuery
+- Angularjs
+- Foundation 6
 ## Usage
 
 - Clone this repo
