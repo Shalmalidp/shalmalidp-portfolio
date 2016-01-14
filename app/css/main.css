@@ -8747,6 +8747,7 @@ footer {
     width: 100%;
     height: auto; }
   .hello {
+    width: 95%;
     background-color: none;
     z-index: 1;
     position: absolute;
@@ -8763,6 +8764,8 @@ footer {
       background-color: none;
       left: 3%;
       top: 30%; } }
+  .home {
+    background-size: cover; }
   .logo {
     width: 8%;
     top: -27% !important;
@@ -8770,7 +8773,7 @@ footer {
   .title {
     background-color: none;
     font-family: 'Old Standard TT', serif;
-    width: 90%;
+    width: 87%;
     position: absolute;
     top: 42%;
     left: 3%;
@@ -8788,10 +8791,10 @@ footer {
   nav {
     width: 100% !important; }
   nav .right {
-    width: 100%;
+    width: 49%;
     position: absolute;
     left: 1%;
-    margin-left: 45%; }
+    margin-left: 50%; }
   .workPage .faIcons {
     position: absolute !important;
     right: 3% !important;

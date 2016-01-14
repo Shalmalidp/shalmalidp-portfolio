@@ -359,6 +359,7 @@ footer{
   }
   //HOME PAGE
   .hello{
+    width: 95%;
     background-color:none;
     z-index :1;
     position:absolute;
@@ -385,7 +386,7 @@ footer{
     background-color:none;
     font-family: 'Old Standard TT', serif;
    // background-image:url('./images/title.png');
-    width:90%;
+    width:87%;
     position:absolute;
     top :42%;
     left:3%;
@@ -402,10 +403,10 @@ footer{
     width:100% !important;
   }
   nav .right{
-  width: 100%;
+  width: 49%;
   position :absolute;
   left:1%;
-  margin-left: 45%;
+  margin-left: 50%;
 }
 
 
