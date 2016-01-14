@@ -215,7 +215,7 @@ ul{
 .projectImg img{
   display:inline-block;
   border :0.4em solid #768A85;
-  width:80%;
+  width:100%;
   height:350px;
   overflow:hidden;
   margin :0 auto;
@@ -538,7 +538,7 @@ ul{
 .allDetails{
   width :98%;
   display:inline-block;
-  margin : 0 auto;
+  margin : 0 6% !important;
 }
 
 #b1{
@@ -565,13 +565,14 @@ ul{
   font-size:0.9em;
 }
 
+
+
 .projectImg img{
     display: inline-block;
     border: 0.4em solid #768A85;
     width: 80%;
     height: 350px;
     overflow: hidden;
-    margin: 0 auto;
 }
 
 h5{
@@ -652,7 +653,7 @@ label{
 //=====================================================================
 //RESPONSIVE WD.... FOR IPHONE AND ANDROID.
 
-@media only screen and (min-width : 150px) and (max-width:650px){
+@media all and (min-width : 150px) and (max-width:650px){
 
   .hello{
     background-color:none;
