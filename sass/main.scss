@@ -141,7 +141,8 @@ h4{
   }
   .aboutImg{
     display:inline-block;
-    //width :45%;
+    border-radius:5%;
+    width:100%;
     vertical-align:top;
     border :0.4em solid #FBF7E3;
     margin-top :5%;
@@ -508,10 +509,17 @@ footer{
   }
   .aboutImg{
  
-    width :300px !important;
+    width :228px !important;
     display :block;
+    margin-top: 10%;
     border :0.4em solid #FBF7E3;
-    
+  
+    img {
+      width:228px;
+      display: inline-block;
+      vertical-align: middle;
+      height:228px !important;
+   }
   }
   //WORK ...RWD
 
