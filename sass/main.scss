@@ -171,7 +171,7 @@ h4{
   width :80%;
   margin:10% ;
 }
-#b3{
+#b3{ // DOWNLOAD RESUME BUTTON
   position:absolute;
   top:2%;
   left :32%;
@@ -185,7 +185,6 @@ h4{
 
 //PROJECTS ..WORK LIST
 
-
 .workPage{
   margin-top:-25px;
   padding-top :2%;
@@ -194,23 +193,28 @@ h4{
   padding-bottom : 5%;
 }
 
+.workMain{
+  width :100%;
+}
+
 ul{
+  width: 100%;
   list-style :none;
   padding-left :5%;
 }
-.mylist{
-    //border:0.5em solid white;;
-    display : inline-block;
-     width:45%;
-  // margin : 1% 0 0 5%;
-  margin-right:5%;
-    vertical-align:top;
-}
 .allDetails{
-  width :98%;
   display:inline-block;
   margin : 2% auto;
+  //width: 44%;
   //transform :rotate(45deg);
+}
+.mylist{
+  //border:0.5em solid white;;
+  display : inline-block;
+  width:44%;    
+  // margin : 1% 0 0 5%;
+  margin-right:5%;
+  vertical-align:top;
 }
 
 .projectImg img{
@@ -223,18 +227,19 @@ ul{
 }
 
 .btn{
-  width:100%;
-  padding-left:10%;
+  //width:10%;
+  padding:5% 28%;
   display: inline-block; 
   vertical-align:center;
 }
 #b1,#b2{
   color:#768A85;
+  font-size: 0.9em;
   //color:black; 
   background:#fff !important; 
   border:0.1em solid #768A85;
   border-radius :10px;
-  margin:5% 5% 8% 10%;
+  //margin:2% 1% 5% 10%;
   font-family: 'Raleway', sans-serif;
 } 
 
@@ -247,7 +252,7 @@ ul{
 .projectInfo{
   display : inline-block;
   height:45px;
-  margin: 1% auto;
+  margin: 2% auto;
   font-family: 'Lobster', cursive;
   vertical-align:top; 
   font-size:1em;
@@ -269,10 +274,10 @@ label{
   color:black;
 }
 
-#l2{
-  font-weight:600;
-  color:black;
-}
+// #l2{
+//   font-weight:600;
+//   color:black;
+// }
 
 
 

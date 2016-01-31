@@ -8623,20 +8623,23 @@ h4 {
   padding-top: 2%;
   padding-bottom: 5%; }
 
+.workMain {
+  width: 100%; }
+
 ul {
+  width: 100%;
   list-style: none;
   padding-left: 5%; }
 
-.mylist {
-  display: inline-block;
-  width: 45%;
-  margin-right: 5%;
-  vertical-align: top; }
-
 .allDetails {
-  width: 98%;
   display: inline-block;
   margin: 2% auto; }
+
+.mylist {
+  display: inline-block;
+  width: 44%;
+  margin-right: 5%;
+  vertical-align: top; }
 
 .projectImg img {
   display: inline-block;
@@ -8647,17 +8650,16 @@ ul {
   margin: 0 auto; }
 
 .btn {
-  width: 100%;
-  padding-left: 10%;
+  padding: 5% 28%;
   display: inline-block;
   vertical-align: center; }
 
 #b1, #b2 {
   color: #768A85;
+  font-size: 0.9em;
   background: #fff !important;
   border: 0.1em solid #768A85;
   border-radius: 10px;
-  margin: 5% 5% 8% 10%;
   font-family: 'Raleway', sans-serif; }
 
 #b1:hover, #b2:hover {
@@ -8668,7 +8670,7 @@ ul {
 .projectInfo {
   display: inline-block;
   height: 45px;
-  margin: 1% auto;
+  margin: 2% auto;
   font-family: 'Lobster', cursive;
   vertical-align: top;
   font-size: 1em; }
@@ -8684,10 +8686,6 @@ label {
   width: 100%;
   font-family: 'Raleway', sans-serif;
   height: 30px;
-  color: black; }
-
-#l2 {
-  font-weight: 600;
   color: black; }
 
 .main {
