@@ -8571,11 +8571,18 @@ h4 {
 
 .aboutPage {
   background-position: center;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  position: relative; }
+
+.aboutPage .faIcons {
+  position: absolute;
+  top: 6% !important;
+  right: -5%;
+  width: 20%; }
 
 .about {
   display: inline-block;
-  width: 90%;
+  width: 100%;
   margin: 5% auto; }
   .about .me {
     width: 39%;
@@ -8584,13 +8591,21 @@ h4 {
     padding-top: 0;
     margin-top: 5%; }
   .about .aboutImg {
-    display: inline-block;
+    display: inline-block; }
+  .about .aboutImg img {
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    overflow: hidden;
+    top: 41%;
     border-radius: 5%;
-    width: 100%;
-    vertical-align: top;
-    border: 0.4em solid #FBF7E3;
-    margin-top: 5%;
-    margin-left: 10%; }
+    transform: rotate(90deg);
+    border: 2px solid #FBF7E3;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+  .about .aboutImg :hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
   .about .sign {
     width: 25%; }
 

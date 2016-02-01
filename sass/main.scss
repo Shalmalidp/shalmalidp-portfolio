@@ -124,15 +124,24 @@ h4{
   //background: url('../images/bg.png');
  background-position:center;
   padding-bottom : 5%;
+  position : relative;
+}
+
+.aboutPage .faIcons{
+    position: absolute;
+    top: 6% !important;
+    right: -5%;
+    width: 20%;
 }
 
 .about{
   display:inline-block;
-  width : 90%;
+  width : 100%;
   margin: 5% auto;
 
   .me{
     width :39%;
+   // float :left;
     display: inline-block;
     margin-left :5%;
     padding-top:0;
@@ -140,13 +149,26 @@ h4{
 
   }
   .aboutImg{
+    
     display:inline-block;
-    border-radius:5%;
-    width:100%;
-    vertical-align:top;
-    border :0.4em solid #FBF7E3;
-    margin-top :5%;
-    margin-left :10%;
+    //width : 10% !important;
+  }
+  .aboutImg img{
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    overflow: hidden;
+    top: 41%;
+    border-radius: 5%;
+    transform: rotate(90deg);
+    border :2px solid #FBF7E3;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  .aboutImg :hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
   
   .sign{
