@@ -161,6 +161,26 @@ h4{
   //background: url('../images/bg.png');
   padding-bottom : 5%;
 }
+.pdfFile{
+  display : block;
+  height : 50%;
+}
+
+.skillHeader{
+  font-weight: bold;
+  color : #768A85;
+}
+.skills{
+  margin: 10%;
+  //border : 1px solid blue;
+  display : block;
+  width : 100%;
+}
+
+.skills img{
+  margin :2%;
+  width :8%;
+}
 
 .resumeContainer{
   position :relative;
@@ -173,7 +193,7 @@ h4{
 }
 #b3{ // DOWNLOAD RESUME BUTTON
   position:absolute;
-  top:2%;
+  top:-30%;
   left :32%;
   margin:0 5% 5% 10%;
   color:#768A85;
