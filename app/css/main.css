@@ -8527,7 +8527,7 @@ nav {
   position: relative; }
 
 nav .right {
-  width: 100%;
+  width: 39%;
   position: absolute;
   left: 1%;
   margin-left: 60%; }
@@ -8798,6 +8798,16 @@ footer {
   color: #D9FFFF;
   font-size: 3em;
   font-family: 'Lora', serif; }
+
+.copyright {
+  width: 100%;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  margin-top: 37%;
+  padding: 2%;
+  z-index: 1;
+  margin-bottom: 0%; }
 
 @media all and (min-width: 651px) and (max-width: 1024px) {
   body {
