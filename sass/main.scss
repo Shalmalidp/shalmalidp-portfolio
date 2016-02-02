@@ -266,7 +266,41 @@ ul{
   height:350px;
   overflow:hidden;
   margin :0 auto;
+  position: relative;
 }
+.projectImg:hover .overlay{
+  visibility: visible;
+  height :350px;
+  background :#000;
+  opacity :0.7;
+  transition: opacity 1.8s ease-in-out;
+ transform: translateY(-350px);
+
+
+}
+
+.overlay{
+  //display :none;
+  position : absolute;
+  visibility: hidden;
+  width:42%;
+}
+.overlayText h3{
+ color :#B7E1DF;
+  opacity : 0.9;
+  font-weight: 600;
+  padding-top :30%;
+  text-align: center;
+  
+  
+  a:hover{
+    color: #B7E1DF;
+    font-size: 1em;
+    font-family:'Raleway', sans-serif;
+
+  }
+}
+
 
 .btn{
   //width:10%;
