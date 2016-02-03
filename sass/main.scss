@@ -695,6 +695,30 @@ ul{
     overflow: hidden;
 }
 
+.overlay{
+  //display :none;
+  position : absolute;
+  visibility: hidden;
+  width:42%;
+}
+.overlayText h3{
+  display: none;
+  color : green;
+  opacity : 0.9;
+  font-weight: 600;
+  padding-top :30%;
+  text-align: center;
+  
+  
+  a:hover{
+    display: none;
+    color: #B7E1DF;
+    font-size: 1em;
+    font-family:'Raleway', sans-serif;
+
+  }
+}
+
 h5{
   font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
@@ -988,6 +1012,31 @@ ul{
   vertical-align:top; 
   font-size:0.9em;
 }
+
+.overlay{
+  //display :none;
+  position : absolute;
+  visibility: hidden;
+  width:42%;
+}
+.overlayText h3{
+  display: none;
+  color : green;
+  opacity : 0.9;
+  font-weight: 600;
+  padding-top :30%;
+  text-align: center;
+  
+  
+  a:hover{
+    display: none;
+    color: #B7E1DF;
+    font-size: 1em;
+    font-family:'Raleway', sans-serif;
+
+  }
+}
+
 
 h5{
   font-family: 'Raleway', sans-serif;
