@@ -73,6 +73,7 @@ nav .right li{
  } 
 
 nav .right li a{
+  padding-right: 46%;
  color: #C7C1A7 !important; 
 }
 
@@ -89,10 +90,11 @@ h4{
 
 // FA ICONS
 .faIcons{
-  position:absolute;
-  top :20% !important;
-  right:-5%;
-  width : 20%;
+  position: absolute;
+  top: 20% !important;
+  box-sizing: border-box;
+  right: 5%;
+  width: 10%;
 
   .fa{
    // position :fixed;
@@ -187,16 +189,34 @@ h4{
   display : block;
   height : 50%;
 }
-
+.skillSet{
+  width:80%;
+}
 .skillHeader{
-  font-weight: bold;
+  padding : 5%;
+  text-align: center;
+  margin-right:0%;
+  font-weight: 600;
   color : #768A85;
+  box-sizing:border-box;
 }
 .skills{
   margin: 10%;
+  width:auto;
   //border : 1px solid blue;
   display : block;
   width : 100%;
+}
+.first{
+    //width: 100%;
+    width:auto;
+    margin-right: 0%;
+    box-sizing:border-box;
+}
+.second{
+  //width: 100%;
+  margin-right: 0%;
+  box-sizing:border-box;
 }
 
 .skills img{
@@ -271,7 +291,7 @@ ul{
 .projectImg:hover .overlay{
   visibility: visible;
   height :350px;
-  background :#000;
+  background :#023;
   opacity :0.7;
   transition: opacity 1.8s ease-in-out;
  transform: translateY(-350px);
@@ -286,7 +306,7 @@ ul{
   width:42%;
 }
 .overlayText h3{
- color :#B7E1DF;
+ color : green;
   opacity : 0.9;
   font-weight: 600;
   padding-top :30%;
