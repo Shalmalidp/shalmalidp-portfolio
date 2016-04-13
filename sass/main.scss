@@ -157,12 +157,12 @@ h4{
   }
   .aboutImg img{
     position: absolute;
-    width: 250px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     top: 41%;
     border-radius: 5%;
-    transform: rotate(90deg);
+    //transform: rotate(90deg);
     border :2px solid #FBF7E3;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -237,7 +237,7 @@ h4{
   position:absolute;
   top:-30%;
   left :32%;
-  margin:0 5% 5% 10%;
+  margin:2% 5% 5% 10%;
   color:#768A85;
   background:#fff!important; 
   border:0.1em solid #768A85;
@@ -599,7 +599,7 @@ footer{
   position:absolute;
   top:0% !important;
   left :30% !important;
-  margin:0 5% 15% 10% !important;
+  margin:2% 5% 15% 10% !important;
   color:#768A85;
   background:#fff!important; 
   border:0.1em solid #768A85;
@@ -913,7 +913,7 @@ nav .right li a{
   position:absolute;
   top:-5% !important;
   left :15%;
-  margin:0 5% 15% 10% !important;
+  margin:2% 5% 15% 10% !important;
   color:#768A85;
   background:#fff!important; 
   border:0.1em solid #768A85;
