@@ -8593,13 +8593,14 @@ h4 {
     padding-top: 0;
     margin-top: 5%; }
   .about .aboutImg {
-    display: inline-block; }
+    display: inline-block;
+    border: none; }
   .about .aboutImg img {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
-    top: 41%;
+    top: 43%;
     border-radius: 5%;
     border: 2px solid #FBF7E3;
     -webkit-filter: grayscale(1);

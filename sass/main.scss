@@ -151,16 +151,16 @@ h4{
 
   }
   .aboutImg{
-    
     display:inline-block;
-    //width : 10% !important;
+    border:none;
+
   }
   .aboutImg img{
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
-    top: 41%;
+    top: 43%;
     border-radius: 5%;
     //transform: rotate(90deg);
     border :2px solid #FBF7E3;
